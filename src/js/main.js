@@ -1,4 +1,3 @@
 import './_vendor.js';
-import vars from './_vars.js';
-import './_functions.js';
+import { burger } from './functions/burger.js';
 import './_components.js';

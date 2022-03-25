@@ -1,9 +1,9 @@
 import {
     disableScroll
-} from '../functions/disable-scroll';
+} from '../functions/disable-scroll.js';
 import {
     enableScroll
-} from '../functions/enable-scroll';
+} from '../functions/enable-scroll.js';
 
 (function () {
     const burger = document?.querySelector('[data-burger]');
@@ -13,9 +13,9 @@ import {
 
     burger?.addEventListener('click', (e) => {
         burger?.classList.toggle('burger--active');
-        menu?.classList.toggle('menu--active');
+        menu?.classList.toggle('mobile-nav--active');
 
-        if (menu?.classList.contains('menu--active')) {
+        if (menu?.classList.contains('mobile-nav--active')) {
             burger?.setAttribute('aria-expanded', 'true');
             burger?.setAttribute('aria-label', 'Закрыть меню');
             disableScroll();
@@ -30,7 +30,7 @@ import {
         burger?.setAttribute('aria-expanded', 'false');
         burger?.setAttribute('aria-label', 'Открыть меню');
         burger.classList.remove('burger--active');
-        menu.classList.remove('menu--active');
+        menu.classList.remove('mobile-nav--active');
         enableScroll();
     });
 
@@ -39,7 +39,7 @@ import {
             burger?.setAttribute('aria-expanded', 'false');
             burger?.setAttribute('aria-label', 'Открыть меню');
             burger.classList.remove('burger--active');
-            menu.classList.remove('menu--active');
+            menu.classList.remove('mobile-nav--active');
             enableScroll();
         });
     });

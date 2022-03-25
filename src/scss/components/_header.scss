@@ -16,41 +16,44 @@
         }
     }
 
-    &__phone {
-        display: flex;
-        align-items: center;
-        margin-right: 30px;
-        font-weight: 500;
-        line-height: 28px;
-        color: $pColor;
-        transition: 0.2s;
-
-        &-icon {
-            margin-right: 10px;
-            width: 18px;
-            height: 18px;
-            fill: $pColor;
-            transition: 0.2s;
-        }
-
-        &:hover {
-            color: $mainColor;
-
-            .header__phone-icon {
-                fill: $mainColor;
-            }
-        }
-    }
-
     &__social {
-        display: flex;
         margin-right: 11px;
-        gap: 11px;
     }
 
     &__nav {
         @include media(800) {
             display: none;
+        }
+    }
+}
+
+.social {
+    display: flex;
+    gap: 11px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-weight: 500;
+    line-height: 28px;
+    color: $pColor;
+    transition: 0.2s;
+
+    &__icon {
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+        fill: $pColor;
+        transition: 0.2s;
+    }
+
+    &:hover {
+        color: $mainColor;
+
+        .header__phone-icon {
+            fill: $mainColor;
         }
     }
 }
@@ -114,5 +117,80 @@
         &:hover {
             color: $mainColor;
         }
+    }
+}
+
+.burger {
+    @include burger;
+
+    display: none;
+
+    @include media(800) {
+        display: block;
+    }
+}
+
+.mobile-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: #fff;
+    visibility: hidden;
+    transform: translate(0%, -100%);
+    transition: 0.5s;
+
+    &__list {
+        margin-top: 30px;
+    }
+
+    &__item {
+        &:not(:first-child) {
+            margin-top: 30px;
+        }
+    }
+
+    &__link {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 28px;
+        text-transform: uppercase;
+        color: $pColor;
+        transition: 0.2s;
+
+        &:hover {
+            color: $mainColor;
+        }
+    }
+
+    &__line {
+        margin-top: 44px;
+        border: 1px solid #e8e8e8;
+        width: 290px;
+    }
+
+    &__phone {
+        margin-top: 47px;
+    }
+
+    &__btn {
+        margin-top: 17px;
+    }
+
+    &__social {
+        margin-top: 21px;
+    }
+
+    &--active {
+        visibility: visible;
+        transform: translate(0%, 0%);
     }
 }
