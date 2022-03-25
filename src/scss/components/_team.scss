@@ -1,0 +1,34 @@
+.team {
+    &__subtitle {
+        margin: 39px 0 0;
+    }
+
+    &__cards {
+        margin: 38px 0 0;
+    }
+
+    &__slide {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.card {
+    max-width: 265px;
+    text-align: center;
+
+    &__title {
+        margin: 18px 0 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__info {
+        margin: 10px 0 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #8c969a;
+    }
+}
