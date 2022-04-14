@@ -1,14 +1,15 @@
 import Swiper from 'swiper/bundle';
 
-const teamSwiper = new Swiper('.team__cards', {
+const teamSwiper = new Swiper('.team-slider', {
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.team-slider__arrow_next',
+        prevEl: '.team-slider__arrow_prev',
     },
-    slidesPerView: 1,
+    slidesPerView: "auto",
+    spaceBetween: 20,
     breakpoints: {
-        768: {
-            slidesPerView: 4,
+        1180: {
+            spaceBetween: 30
         },
     },
 });
