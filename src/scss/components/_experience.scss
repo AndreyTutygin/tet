@@ -1,5 +1,6 @@
 .experience {
     position: relative;
+    padding-bottom: 100px;
 
     &__gradient {
         position: absolute;
@@ -17,6 +18,16 @@
 
     &__info {
         display: flex;
+
+        @include media(1100) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        @include media(700) {
+            text-align: left;
+        }
     }
 
     &__desc {
@@ -30,6 +41,16 @@
             font-weight: 600;
             font-size: 28px;
             line-height: 44px;
+
+            @include media(1100) {
+                margin: 30px auto 0;
+                text-align: center;
+            }
+
+            @include media(700) {
+                padding-bottom: 50px;
+                text-align: left;
+            }
         }
 
         &:nth-child(3) {
@@ -39,18 +60,25 @@
         }
     }
 
+    &__img {
+        @include media(700) {
+            width: 100%;
+            height: 320px;
+        }
+    }
+
     &__container-big {
         position: relative;
     }
 }
 
-.help-card {
+.list-card {
     border: 1px solid #e8e8e8;
     padding: 43px 67px;
-    width: 460px;
+    max-width: 460px;
     background-color: #f6f8f9;
 
-    &__title {
+    &-title {
         margin: 0 0 0 -15px;
         font-weight: 800;
         font-size: 16px;
@@ -68,25 +96,57 @@
     &__item {
         font-weight: 500;
         font-size: 16px;
-        line-height: 40px;
+        line-height: 23px;
+
+        &:not(:first-child) {
+            margin-top: 15px;
+        }
+
+        @include media(700) {
+            line-height: 22px;
+        }
+    }
+
+    @include media(1100) {
+        margin-top: 30px;
+        text-align: left;
+    }
+
+    @include media(700) {
+        padding: 40px 30px;
     }
 }
 
 .orange-block {
     position: absolute;
-    right: 300px;
+    left: 51%;
     top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 50px 60px;
-    max-width: 556px;
+    width: 556px;
     color: #fff;
     background-color: $mainColor;
 
     &__txt {
         margin: 0;
 
+        &_version-1 {
+            font-size: 60px;
+
+            @include media(700) {
+                font-size: 40px;
+                line-height: 40px;
+            }
+        }
+
+        &_version-2 {
+            font-size: 90px;
+        }
+
         &:first-child {
             font-weight: 900;
-            font-size: 60px;
             line-height: 60px;
         }
 
@@ -95,6 +155,18 @@
             font-weight: 600;
             font-size: 16px;
             line-height: 32px;
+
+            @include media(700) {
+                font-size: 16px;
+                line-height: 32px;
+            }
         }
+    }
+
+    @include media(1100) {
+        position: static;
+        margin-top: -4px;
+        padding: 60px 30px;
+        width: 100%;
     }
 }

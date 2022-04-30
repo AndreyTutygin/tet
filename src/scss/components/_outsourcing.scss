@@ -1,0 +1,53 @@
+.outsourcing {
+    padding-bottom: 75px;
+
+    &__container {
+        position: relative;
+        display: grid;
+        justify-items: flex-end;
+        grid-template-columns: 2fr 1fr;
+        padding-bottom: 100px;
+        gap: 30px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 1453px;
+            height: 1px;
+            background-color: #e8e8e8;
+        }
+
+        @include media(900) {
+            grid-template-columns: 1fr;
+            justify-items: start;
+        }
+
+        @include media(700) {
+            padding-bottom: 70px;
+        }
+    }
+
+    &__orange-block {
+        position: static;
+        padding: 70px;
+        max-width: 362px;
+
+        @include media(700) {
+            padding: 40px;
+        }
+    }
+
+    &__txt {
+        &:nth-child(2) {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+
+    @include media(700) {
+        padding-bottom: 70px;
+    }
+}
