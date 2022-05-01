@@ -20,8 +20,8 @@
         }
 
         @include media(900) {
-            grid-template-columns: 1fr;
             justify-items: start;
+            grid-template-columns: 1fr;
         }
 
         @include media(700) {

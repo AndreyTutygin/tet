@@ -1,0 +1,142 @@
+.forWhom {
+    padding-bottom: 100px;
+
+    &__section-title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 54px;
+        text-transform: none;
+        color: $pColor;
+    }
+
+    &__subtitle {
+        margin: 20px 0 0;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        list-style-type: decimal-leading-zero;
+        list-style-position: inside;
+        padding: 0 0 100px;
+        gap: 50px;
+
+        @include media(700) {
+            display: none;
+        }
+    }
+
+    &__item {
+        border-left: 2px solid $secondColor;
+        padding-left: 43px;
+        max-width: 558px;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+        color: $mainColor;
+
+        &:last-child {
+            order: -1;
+            list-style-type: none;
+            margin-left: -40px;
+            border: none;
+        }
+    }
+
+    &__item-title {
+        color: $pColor;
+    }
+
+    &__txt {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        text-transform: none;
+        color: $pColor;
+    }
+
+    &__mobile-title {
+        display: none;
+
+        @include media(700) {
+            display: block;
+        }
+    }
+
+    &__banner {
+        min-height: 350px;
+    }
+}
+
+.forWhom-slider {
+    display: none;
+    padding-bottom: 74px;
+
+    &__slide {
+        max-width: 240px;
+    }
+
+    &__item {
+        border-left: 2px solid $secondColor;
+        padding-left: 14px;
+        max-width: 240px;
+    }
+
+    &__item-title {
+        position: relative;
+        margin-left: 30px;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 30px;
+        text-transform: uppercase;
+
+        &::before {
+            position: absolute;
+            left: -30px;
+            top: -5px;
+            color: $mainColor;
+        }
+
+        &_1 {
+            &::before {
+                content: "01.";
+            }
+        }
+
+        &_2 {
+            &::before {
+                content: "02.";
+            }
+        }
+
+        &_3 {
+            &::before {
+                content: "03.";
+            }
+        }
+
+        &_4 {
+            &::before {
+                content: "04.";
+            }
+        }
+
+        &_5 {
+            &::before {
+                content: "05.";
+            }
+        }
+    }
+
+    &__txt {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    @include media(700) {
+        display: block;
+        margin-top: 43px;
+    }
+}
