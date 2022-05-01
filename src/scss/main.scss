@@ -3,6 +3,7 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+@import "./components/navArrows";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/about";
@@ -11,3 +12,6 @@
 @import "./components/services";
 @import "./components/outsourcing";
 @import "./components/forWhom";
+@import "./components/benefits";
+@import "./components/whereToBegin";
+@import "./components/publication";

@@ -1,0 +1,34 @@
+.nav-arrows {
+    position: absolute;
+    right: 31px;
+    top: 0;
+
+    &__arrow {
+        border: 1px solid #e8e8e8;
+        width: 60px;
+        height: 60px;
+        background-color: $secondColor;
+    }
+
+    &__arrow-svg {
+        width: 20px;
+        height: 10px;
+        fill: #fff;
+
+        &_prev {
+            transform: rotate(180deg);
+        }
+    }
+
+    @include media(800) {
+        display: none;
+    }
+}
+
+.swiper-button-disabled {
+    background-color: #f6f8f9;
+
+    .nav-arrows__arrow-svg {
+        fill: #8c969a;
+    }
+}

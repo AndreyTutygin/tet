@@ -1,5 +1,30 @@
 .services {
+    position: relative;
     padding-bottom: 100px;
+
+    &__gradient {
+        position: absolute;
+        right: 0;
+        top: 24%;
+        z-index: -1;
+        width: 838px;
+        height: 1265px;
+        background-image: url("./../img/services__gradient.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.6;
+
+        @include media(1100) {
+            top: 60%;
+        }
+
+        @include media(700) {
+            top: 90%;
+            width: 400px;
+            height: 600px;
+        }
+    }
 
     &__cards {
         display: grid;

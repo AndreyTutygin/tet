@@ -7,6 +7,11 @@
         line-height: 54px;
         text-transform: none;
         color: $pColor;
+
+        @include media(700) {
+            font-size: 28px;
+            line-height: 44px;
+        }
     }
 
     &__subtitle {
@@ -66,6 +71,10 @@
 
     &__banner {
         min-height: 350px;
+    }
+
+    @include media(700) {
+        padding-bottom: 70px;
     }
 }
 

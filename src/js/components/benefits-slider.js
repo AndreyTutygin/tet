@@ -1,6 +1,6 @@
 import Swiper from 'swiper/bundle';
 
-const forWhomSwiper = new Swiper('.forWhom-slider', {
+const benefitsSwiper = new Swiper('.benefits__swiper', {
     slidesPerView: "auto",
     spaceBetween: 20,
 });
