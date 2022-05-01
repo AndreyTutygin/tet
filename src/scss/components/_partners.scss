@@ -1,0 +1,44 @@
+.partners {
+    padding-bottom: 100px;
+
+    &__container {
+        position: relative;
+        padding-bottom: 100px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 1453px;
+            height: 1px;
+            background-color: #e8e8e8;
+        }
+
+        @include media(700) {
+            padding-bottom: 70px;
+        }
+    }
+
+    &__swiper {
+        margin-top: 50px;
+    }
+
+    &__swiper-slide {
+        max-width: 166px;
+    }
+
+    &__nav-arrows {
+        position: absolute;
+        right: 31px;
+        top: -53px;
+
+        @include media(800) {
+            display: none;
+        }
+    }
+
+    @include media(700) {
+        padding-bottom: 70px;
+    }
+}
