@@ -65,19 +65,25 @@
     border: 1px solid #e8e8e8;
     width: 60px;
     height: 60px;
+    background-position: center;
+    background-size: auto 24px;
+    background-repeat: no-repeat;
     transition: 0.2s;
 
-    &__svg {
-        width: 24px;
-        height: 24px;
+    &_viber {
+        background-image: url("./../img/viber.svg");
     }
 
-    .viber {
-        fill: #7b519d;
+    &_telegram {
+        background-image: url("./../img/telegram.svg");
     }
 
-    .telegram {
-        fill: #40b0ef;
+    &_instagram {
+        background-image: url("./../img/instagram.svg");
+    }
+
+    &_fb {
+        background-image: url("./../img/fb.svg");
     }
 }
 
@@ -123,7 +129,15 @@
 .burger {
     @include burger;
 
+    position: fixed;
+    right: 40px;
+    top: 34px;
     display: none;
+    transition: transform 0.2s linear;
+
+    &_hide {
+        transform: translateY(-70px);
+    }
 
     @include media(800) {
         display: block;

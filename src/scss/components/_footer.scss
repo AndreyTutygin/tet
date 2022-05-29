@@ -1,0 +1,17 @@
+.footer {
+    padding: 16px;
+    background-color: $pColor;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__copy {
+        margin: 0;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #fff;
+    }
+}

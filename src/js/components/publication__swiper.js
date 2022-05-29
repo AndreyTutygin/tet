@@ -7,6 +7,7 @@ const publicationSwiper = new Swiper('.publication__swiper', {
     },
     slidesPerView: "auto",
     spaceBetween: 20,
+    grabCursor: true,
     breakpoints: {
         1180: {
             spaceBetween: 30
