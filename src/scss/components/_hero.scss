@@ -17,7 +17,9 @@
     }
 
     &__img {
-        width: 42.4%;
+        @include media(1000) {
+            width: 40%;
+        }
 
         @include media(700) {
             margin: 0 auto;
