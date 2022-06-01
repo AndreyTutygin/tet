@@ -9,10 +9,7 @@
         z-index: -1;
         width: 1265px;
         height: 838px;
-        background-image: url("./../img/experience__gradient.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background: center / cover no-repeat url("./../img/experience__gradient.png");
         opacity: 0.6;
     }
 

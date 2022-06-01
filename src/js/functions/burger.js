@@ -5,7 +5,7 @@ import {
     enableScroll
 } from '../functions/enable-scroll.js';
 
-(function () {
+export const burger = () => {
     const burger = document?.querySelector('[data-burger]');
     const menu = document?.querySelector('[data-menu]');
     const menuItems = document?.querySelectorAll('[data-menu-item]');
@@ -43,4 +43,4 @@ import {
             enableScroll();
         });
     });
-})();
+};

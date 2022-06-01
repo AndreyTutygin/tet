@@ -1,9 +1,9 @@
 import Swiper from 'swiper/bundle';
 
-const publicationSwiper = new Swiper('.publication__swiper', {
+const teamSlider = new Swiper('.team-slider', {
     navigation: {
-        nextEl: '.publication__arrow_next',
-        prevEl: '.publication__arrow_prev',
+        nextEl: '.team-slider__arrow_next',
+        prevEl: '.team-slider__arrow_prev',
     },
     slidesPerView: "auto",
     spaceBetween: 20,

@@ -9,22 +9,9 @@
         z-index: -1;
         width: 838px;
         height: 1265px;
-        background-image: url("./../img/benefits__gradient.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background: center / cover no-repeat url("./../img/benefits__gradient.png");
         opacity: 0.6;
     }
-
-    // &__container {
-    //     display: grid;
-    //     grid-template-columns: 1fr 1fr;
-    //     gap: 20px 30px;
-
-    //     @include media(1300) {
-    //         gap: 60px 30px;
-    //     }
-    // }
 
     &__section-title {
         margin: 0 0 -55px -68px;

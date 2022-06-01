@@ -1,3 +1,4 @@
 import './_vendor.js';
-import { burger } from './functions/burger.js';
+import {isWebp} from './functions/is-webp.js';
+isWebp();
 import './_components.js';

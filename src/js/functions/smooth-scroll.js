@@ -2,7 +2,7 @@ export const smoothScroll = () => {
     const anchors = document.querySelectorAll('a[href*="#"]')
 
     for (let anchor of anchors) {
-        anchor.addEventListener('click', function (e) {
+        anchor.addEventListener('click', (e) => {
             e.preventDefault()
 
             const blockID = anchor.getAttribute('href').substr(1)

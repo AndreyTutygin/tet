@@ -16,12 +16,19 @@
         }
     }
 
+    &__img-wrap {
+        @include media(700) {
+            width: 100%;
+        }
+    }
+
     &__img {
         @include media(1000) {
-            width: 40%;
+            width: 80%;
         }
 
         @include media(700) {
+            display: block;
             margin: 0 auto;
             width: 50%;
         }
@@ -72,10 +79,7 @@
         z-index: -1;
         width: 49.3%;
         height: 877px;
-        background-image: url("../img/hero__gradient.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        background: center / cover no-repeat url("./../img/hero__gradient.png");
         opacity: 0.6;
 
         @include media(930) {

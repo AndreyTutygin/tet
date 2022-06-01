@@ -1,6 +1,6 @@
 import Swiper from 'swiper/bundle';
 
-const partnersSwiper = new Swiper('.partners__swiper', {
+const partnersSlider = new Swiper('.partners__swiper', {
     navigation: {
         nextEl: '.partners__arrow_next',
         prevEl: '.partners__arrow_prev',
